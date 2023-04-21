@@ -49,30 +49,8 @@
   margin-top: 0.5rem;
 }
 
-.list-item__form-fields {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.list-item__form-controls {
-  margin-top: 0.5rem;
-  text-align: right;
-}
-
 .list-item--toolbar-on > .list-item__form {
   display: inline-block;
-}
-
-.field-input {
-  display: inline-block;
-  border: none;
-  border-bottom: 2px solid #bc7B77;
-  background-color: transparent;
-}
-
-.field-input:focus {
-  border-bottom: 2px solid black;
-  outline: none;
 }
 
 .product-input {

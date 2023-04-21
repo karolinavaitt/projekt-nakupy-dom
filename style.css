@@ -1,8 +1,3 @@
-/* 
- * Hlavní styly
- * ============
- */
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -47,10 +42,6 @@ footer {
   height: 4rem;
 }
 
-.footer__text {
-  text-align: center;
-}
-
 .brand {
   display: flex;
   align-items: center;
@@ -85,4 +76,26 @@ button:hover {
 
 button:active {
   transform: scale(1);
+}
+
+.form-fields {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.field-input {
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #f67e79;
+  background-color: transparent;
+}
+
+.field-input:focus {
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.form-controls {
+  margin-top: 0.5rem;
+  text-align: right;
 }
