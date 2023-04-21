@@ -18,8 +18,6 @@ export const ShopList = (props) => {
   `;
 
   if (dayResult === 'loading') {
-    
-    
     fetch(`https://nakupy.kodim.app/api/sampleweek/${day}`)
       .then((response) => response.json())
       .then((data) => {
@@ -30,10 +28,11 @@ export const ShopList = (props) => {
           })
         );
       });
-  } else {
-    const itemsElement = element.querySelector('.shoplist__items');
-    itemsElement.append(...dayResult.items.map((item) => ListItem(item)));
-  }
+    return element;
+  } 
+
+  const itemsElement = element.querySelector('.shoplist__items');
+  itemsElement.append(...dayResult.items.map((item) => ListItem(item)));
 
   return element;
 };
